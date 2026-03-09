@@ -1,16 +1,99 @@
-# React + Vite
+# TaskFlow - React Todo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive task management application built with **React 19**, **Vite 7**, and **Tailwind CSS 4**. TaskFlow helps users capture, manage, and track daily tasks with a clean UI and persistent local storage.
 
-Currently, two official plugins are available:
+## Project Snapshot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Built a complete CRUD todo workflow: create, edit, complete, delete
+- Implemented persistent state with browser `localStorage`
+- Added UX controls such as task filtering (`Show Finished Tasks`) and disabled invalid submissions
+- Designed a polished, glassmorphism-inspired interface using Tailwind utility-first styling
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add new tasks with validation
+- Mark tasks as completed/incomplete
+- Edit existing tasks
+- Delete tasks
+- Toggle visibility of completed tasks
+- Persist task data across page reloads
+- Mobile-friendly responsive layout
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React 19
+- **Build Tool:** Vite 7
+- **Styling:** Tailwind CSS 4
+- **Utilities:** `uuid` for unique task IDs
+- **Linting:** ESLint 9
+
+## Why This Project Matters
+
+This project demonstrates practical frontend engineering skills recruiters look for:
+
+- Component-based architecture with reusable UI (`Navbar`, `App`)
+- State management using React hooks (`useState`, `useEffect`)
+- Data persistence and browser API integration (`localStorage`)
+- Clean UX decisions (validation, task filtering, status-driven styling)
+- Maintainable development workflow with linting and modern tooling
+
+## Project Structure
+
+```text
+ReactTodo/
+|-- public/
+|-- src/
+|   |-- assets/
+|   |-- components/
+|   |   |-- Navbar.jsx
+|   |-- App.jsx
+|   |-- index.css
+|   |-- main.jsx
+|-- eslint.config.js
+|-- index.html
+|-- package.json
+|-- vite.config.js
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/ReactTodo.git
+cd ReactTodo
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start development server
+
+```bash
+npm run dev
+```
+
+The app will run at `http://localhost:5173/` by default.
+
+## Available Scripts
+
+- `npm run dev` - Start local development server
+- `npm run build` - Create production build
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint checks
+
+## Potential Enhancements
+
+- Add due dates and task priorities
+- Implement drag-and-drop task ordering
+- Add dark/light theme toggle
+- Integrate backend authentication and cloud sync
+- Add unit and component tests (Vitest + React Testing Library)
+
+## Author
+
+**Hritik Sharma**  
+Frontend Developer (React, JavaScript, UI Engineering)
